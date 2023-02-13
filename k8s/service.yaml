@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers: 
-        - image: quay.io/rohanp/private-demo: latest
+        - image: quay.io/rohanp/private-demo:latest
           ports:
             - containerPort: 8080 
           env: 
