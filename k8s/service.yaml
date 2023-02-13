@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1 
+kind: Service 
+metadata:
+  name: echo 
+spec:
+  template:
+    spec:
+      containers:
+        - image: 
+          ports:
+            - containerPort: 8080 
+          env: 
+            - name: MY_VAR
+              value: "12345"
