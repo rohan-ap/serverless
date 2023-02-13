@@ -1,11 +1,12 @@
 apiVersion: serving.knative.dev/v1 
 kind: Service 
 metadata:
-  name: echo 
+  name: echo
+  namespace: pipeline-serverless
 spec:
   template:
     spec:
-      containers:
+      containers: quay.io/rohanp/private-demo
         - image: 
           ports:
             - containerPort: 8080 
